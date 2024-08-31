@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Contributing - pioarduino Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Contributing";
+        var mkdocs_page_input_path = "contributing.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> pioarduino Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Contents</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installing/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../platform/">pioarduino Platform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../migration/">Migration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../faq/">FAQ's</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Contributing</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#how-to-contribute">How to Contribute</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#before-contributing">Before Contributing</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pull-request-process">Pull Request Process</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#example-contribution-guideline">Example Contribution Guideline</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#checklist">Checklist</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#header">Header</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#readme-file">README file</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#inline-comments">Inline Comments</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#testing">Testing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#example-template">Example Template</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#legal-part">Legal Part</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../releasenotes/">Release Notes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../LICENSE/">License</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">pioarduino Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Contents</li>
+      <li class="breadcrumb-item active">Contributing</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <blockquote>
+<p><center><strong>This is pulled from the Espressif arduino-esp32 documentation.<br>
+Needs review.</strong></center></p>
+</blockquote>
+<h1 id="contributions-guide">Contributions Guide</h1>
+<p>Contributions to the <strong><em>pioarduino</em></strong> project are welcome!</p>
+<p>These can include:</p>
+<ul>
+<li>fixing bugs  </li>
+<li>adding features  </li>
+<li>adding or correcting documentation</li>
+</ul>
+<h2 id="how-to-contribute">How to Contribute</h2>
+<p>Contributions are accepted via <a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests">Github Pull Requests</a>.</p>
+<h2 id="before-contributing">Before Contributing</h2>
+<p>Before sending a Pull Request, please consider this:</p>
+<ul>
+<li>
+<p>Is the contribution entirely your own work, or is it already licensed under an LGPL 2.1 compatible Open Source License? If not, it cannot be accepted.</p>
+</li>
+<li>
+<p>Is the code adequately commented and can people understand how it is structured?</p>
+</li>
+<li>
+<p>Is there documentation or examples that go with code contributions?</p>
+</li>
+<li>
+<p>Are comments and documentation written in clear English, with no spelling or grammar errors?</p>
+</li>
+<li>
+<p>Example contributions are also welcome.</p>
+</li>
+<li>
+<p>If you are contributing by adding a new example, please use the <a href="https://docs.arduino.cc/learn/contributions/arduino-writing-style-guide">Arduino style guide</a> and the example guideline below.</p>
+</li>
+<li>
+<p>If the contribution contains multiple commits, are they grouped together into logical changes (one major change per pull request)? Are any commits with names like "fixed typo" <a href="https://eli.thegreenplace.net/2014/02/19/squashing-github-pull-requests-into-a-single-commit/">`squashed into previous commits</a>?</p>
+</li>
+</ul>
+<p>If you're unsure about any of these points, please open the Pull Request anyhow and then ask us for feedback.</p>
+<h2 id="pull-request-process">Pull Request Process</h2>
+<p>After you open the Pull Request, there will probably be some discussion in the comments field of the request itself.</p>
+<p>Once the Pull Request is ready to merge, it will first be merged into our internal git system for "in-house" automated testing.</p>
+<p>If this process passes, it will be merged into the public GitHub repository.</p>
+<h2 id="example-contribution-guideline">Example Contribution Guideline</h2>
+<h3 id="checklist">Checklist</h3>
+<ul>
+<li>Check if your example proposal has no similarities to the project (<strong>already existing examples</strong>).</li>
+<li>Use the <a href="https://docs.arduino.cc/learn/contributions/arduino-writing-style-guide">Arduino style guide</a>.</li>
+<li>Add the header to all source files.</li>
+<li>Add the <code>README.md</code> file.</li>
+<li>Add inline comments if needed.</li>
+<li>Test the example.</li>
+</ul>
+<h3 id="header">Header</h3>
+<p>All the source files must include the header with the example name and license, if applicable. You can change this header as you wish, but it will be reviewed by the community and may not be accepted.</p>
+<p>Ideally, you can add some description about the example, links to the documentation, or the author's name. Just have in mind to keep it simple and short.</p>
+<p><strong>Header Example</strong></p>
+<pre><code class="language-arduino">/* Wi-Fi FTM Initiator Arduino Example
+
+This example code is in the Public Domain (or CC0 licensed, at your option.)
+
+Unless required by applicable law or agreed to in writing, this
+software is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied.
+*/
+</code></pre>
+<h3 id="readme-file">README file</h3>
+<p>The <strong>README.md</strong> file should contain the example details.</p>
+<p>Please see the recommended <strong>README.md</strong> file in the <a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/ESP32/examples/Template/ExampleTemplate">example template folder</a>.</p>
+<h3 id="inline-comments">Inline Comments</h3>
+<p>Inline comments are important if the example contains complex algorithms or specific configurations that the user needs to change.</p>
+<p>Brief and clear inline comments are really helpful for the example understanding and it's fast usage.</p>
+<p><strong>Example</strong></p>
+<p>See the <a href="https://github.com/espressif/arduino-esp32/blob/master/libraries/WiFi/examples/FTM/FTM_Initiator/FTM_Initiator.ino"><code>FTM example</code></a> as a reference.</p>
+<pre><code class="language-arduino">// Number of FTM frames requested in terms of 4 or 8 bursts (allowed values - 0 (No pref), 16, 24, 32, 64)
+</code></pre>
+<p>and</p>
+<pre><code class="language-arduino">const char * WIFI_FTM_SSID = &quot;WiFi_FTM_Responder&quot;; // SSID of AP that has FTM Enabled
+const char * WIFI_FTM_PASS = &quot;ftm_responder&quot;; // STA Password
+
+</code></pre>
+<h3 id="testing">Testing</h3>
+<p>Be sure you have tested the example in all the supported targets. If the example works only with specific targets, add this information in the <strong>README.md</strong> file on the <strong>Supported Targets</strong> and in the example code as an inline comment.</p>
+<p><strong>Example</strong></p>
+<pre><code class="language-arduino">/*
+    THIS FEATURE IS SUPPORTED ONLY BY ESP32-S2 AND ESP32-C3
+*/
+</code></pre>
+<p>and</p>
+<p>Currently, this example supports the following targets.</p>
+<table>
+<thead>
+<tr>
+<th>Supported Targets</th>
+<th>ESP32</th>
+<th>ESP32-S2</th>
+<th>ESP32-C3</th>
+<th>ESP32-S3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-template">Example Template</h3>
+<p>The example template can be found <a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/ESP32/examples/Template/ExampleTemplate">here</a> and can be used as a reference.</p>
+<h2 id="legal-part">Legal Part</h2>
+<p>Before a conribution can be accepted, you will need to sign the contributor agreement. If you haven't submitted a PR to this project before, you will be prompted for this automatically as part of the Pull Request process.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../faq/" class="btn btn-neutral float-left" title="FAQ's"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../releasenotes/" class="btn btn-neutral float-right" title="Release Notes">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../faq/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../releasenotes/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
